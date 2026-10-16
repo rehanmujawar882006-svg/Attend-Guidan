@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 <head>
@@ -62,69 +61,4 @@ function loginUser(event) {
 </script>
 
 </body>
-=======
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Attend Guidan Login </title>
-  <link rel="stylesheet" href="Style.css">
-</head>
-<body>
-  <main class="login-page">
-    <section class="main-div">
-      <div class="logo">Attend Guidan</div>
-      <p class="name">Attendance Management System</p>
-
-      <form onsubmit="loginUser(event)">  
-        <fieldset class="login-as">
-          <legend>Login as</legend>
-          <label class="login-option">
-            <input type="radio" name="role" value="faculty" checked>
-            <span>Faculty</span>
-          </label>
-          <label class="login-option">
-            <input type="radio" name="role" value="student">
-            <span>Student</span>
-          </label>
-          <label class="login-option">
-            <input type="radio" name="role" value="admin">
-            <span>Admin</span>
-          </label>
-        </fieldset>
-
-        <label class="label" for="email">Email address</label>
-        <input class="text-input" id="email" name="email" type="email" placeholder="you@college.edu" autocomplete="username" required>
-
-        <label class="label password-label" for="password">Password</label>
-        <input class="text-input" id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
-
-        <button class="submit-button" type="submit">Sign in <span>→</span></button>
-      </form>
-      <p class="sitcoe">SITCOE</p>
-    </section>
-  </main>
-
-  
-<script>
-function loginUser(event) {
-    event.preventDefault();
-
-    let role = document.querySelector('input[name="role"]:checked').value;
-
-    if (role === "faculty") {
-        window.location.href = "faculty.html";
-    }
-    else if (role === "student") {
-        window.location.href = "student.html";
-    }
-    else if (role === "admin") {
-        window.location.href = "admin.html";
-    }
-}
-</script>
-
-</body>
->>>>>>> d643fb2d2e0b5adc42016b520ff829af2cc05b9a
 </html>
