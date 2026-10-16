@@ -13,6 +13,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
+  
 }
 
 button,
@@ -27,10 +28,7 @@ input {
   padding: 32px 18px;
   overflow: hidden;
   position: relative;
-  background:
-    radial-gradient(ellipse at 18% 20%, rgba(57, 125, 255, .42), transparent 38%),
-    radial-gradient(ellipse at 82% 78%, rgba(151, 79, 224, .32), transparent 40%),
-    linear-gradient(135deg, #101a35 0%, #172a50 52%, #10182f 100%);
+ background: #7965e8;
 }
 .main-div {
   position: relative;
